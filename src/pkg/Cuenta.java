@@ -14,7 +14,7 @@ public class Cuenta {
 
 	public void ingresar(double i) {
 		// TODO Auto-generated method stub
-		saldo = 200.0;
+		saldo += i;
 	}
 
 	public String getNumero() {
@@ -37,12 +37,12 @@ public class Cuenta {
 		return saldo;
 	}
 
-	public void setSaldo(Double saldo) {
+	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
 	public void retirar(double i) {
 		// TODO Auto-generated method stub
-		saldo = -200.0;
+		saldo -= i;
 	}
 }
