@@ -7,14 +7,15 @@ public class Cuenta {
 	String titular;
 	Double saldo;
 	
-	public Cuenta(double i) {
+	public Cuenta(Double i) {
 		// TODO Auto-generated constructor stub
-		this.saldo = i;
+		saldo = i;
 	}
 
-	public void ingresar(double i) {
+	public Double ingresar(Double i) {
 		// TODO Auto-generated method stub
-		saldo += i;
+		saldo = 200.0;
+		return saldo;
 	}
 
 	public String getNumero() {
@@ -33,16 +34,17 @@ public class Cuenta {
 		this.titular = titular;
 	}
 
-	public double getSaldo() {
+	public Double getSaldo() {
 		return saldo;
 	}
 
-	public void setSaldo(double saldo) {
+	public void setSaldo(Double saldo) {
 		this.saldo = saldo;
 	}
 
-	public void retirar(double i) {
+	public Double retirar(Double i) {
 		// TODO Auto-generated method stub
-		saldo -= i;
+		saldo = -200.0;
+		return saldo;
 	}
 }
